@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NASIF | Reservas</title>
+        <meta name="description" content="Reservas"/>
+        <meta name="author" content="Reservas de Nasif Restaurante"/>
+        <meta name="keywords" content="reservas, horarios, días, fechas, disponibilidad, nuevas experiencias"/>
+        <link rel="icon" type="image/png" href="imagenes/nasif-icon.png" />
+        <link href="https://fonts.googleapis.com/css?family=Sarabun:100,200,200i,600,800&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos-generales.css"/> 
+        <link rel="stylesheet" type="text/css" href="css/estilos-reservas.css"/>
+    </head>
+    <header>
+        <nav class="menuPrincipal">
+            <ul>
+                <li><a class="btnNasif" href="index.html">nasif.</a></li>
+                <li class="reservas"><a href="RESERVAS.html">RESERVAS</a></li>
+                <li><a href="NUESTRORESTAURANTE.html">NUESTRO RESTAURANTE</a></li>
+                <li><a href="INFORMACION.html">INFORMACIÓN</a></li>
+                <li><a href="REGISTRARSE.html">REGISTRARSE</a></li>
+                <li><a id="Nmenu" href="#"><i class="fa fa-chevron-down"></i></a>
+                    <ul class="subMenu">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="error404.html">VER MI PERFIL</a></li>
+                        <li><a href="error404.html">CONFIGURACIÓN</a></li>
+                        <li><a href="#">CERRAR SESIÓN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <nav class="menuResponsive">
+            <button class="nav-boton" onclick="accion()"><i class="fa fa-angle-up"></i></button>
+            <a href="index.html" class="nav-enlace desaparece btnNasif">nasif.</a>
+            <a href="RESERVAS.html" class="nav-enlace desaparece">RESERVAS</a>
+            <a href="NUESTRORESTAURANTE.html" class="nav-enlace desaparece">NUESTRO RESTAURANTE</a>
+            <a href="INFORMACION.html" class="nav-enlace desaparece">INFORMACIÓN</a>
+            <a href="REGISTRARSE.html" class="nav-enlace desaparece">REGISTRARSE</a>
+            <a href="error404.html" class="nav-enlace desaparece">INICIAR SESIÓN</a>
+        </nav>
+
+        <section id="reservas">
+                <div class="contenedorReserva contenedorUno">
+                    <a class="reservaAca" target="_blank" href="#">RESERVA ACÁ</a>
+                    <h2 class="titulo">O llama y hablamos</h2>
+                    <h2 class="telefono">+34 (93) 1 537 010</h2>
+                </div>
+                <div class="contenedorReserva contenedorDos">
+                    <div class="card cardUno">
+                        <img src="imagenes/almuerzo.jpg" class="img-fluid" alt="Imagen de un almuerzo Nasif">
+                        <div class="card-body">
+                            <a href="#"><p class="card-text">Vení a disfrutar los mejores almuerzos de Barcelona, te ofrecemos una extensa lista de variedades.</p></a>
+                        </div>
+                    </div>
+                    <div class="card cardDos">
+                        <img src="imagenes/cena.jpg" class="img-fluid" alt="Imagen de una cena Nasif">
+                        <div class="card-body">
+                           <a href="#"><p class="card-text">Cena en un ambiente absolutamente agradable, mientras disfrutas de una noche increíble en Nasif.</p></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <div class="contenedorInferior">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.464523913501!2d2.165107914796881!3d41.38571730406271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f47ee0ade9%3A0x3cb6db4e3e1d90cd!2sCalle%20de%20Pelayo%2C%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1579149352359!5m2!1ses!2sar" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="">
+            </iframe>
+        </div>
+
+                <!-- LIBRERIAS JS -->
+        <script src="js/jquery.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>  
+    <footer class="contenedorFooter"> 
+        <div>    
+            <h2 class="footerText">Nasif 2020 | Copyright © Todos los derechos reservados</h2>
+        </div>
+        <ul class="redesSociales">
+            <li><a class="facebook" target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="instagram" target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="twitter" target="_blank" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+</html>

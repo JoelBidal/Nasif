@@ -1,0 +1,202 @@
+*{ margin: 0; padding: 0; box-sizing: content-box;}
+
+.menuError{
+    background: #ffff;
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    left: 45%;
+    z-index: 100;
+    animation-duration: 1s;
+    animation-name: aparecerContenedor;
+}
+
+@keyframes aparecerContenedor{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.menuError .boton{
+    list-style: none;}
+
+.menuError a{
+    height: 50px;
+    padding: 30px;
+    color: rgba(155, 155, 155, 0.877);
+    display: block;
+    font-size: 35px;
+    font-family: Sarabun;
+    font-weight: 600; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: color;
+    animation-duration: 0.1s;
+    animation-name: aparecerMenu;
+}
+
+@keyframes aparecerMenu{
+    0% {opacity: 0;}
+    100% {opacticy: 1;}
+}
+
+.menuError a:hover {color: rgb(39, 37, 37);}
+
+.error404{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h1{
+    color: rgba(71, 71, 71, 0.719);
+    font-size: 20px;
+    font-size: 100px;
+    font-family: Sarabun;
+    font-weight: 600;
+    line-height: 550px;
+    text-align: center;
+    height: 550px;
+}
+
+h2{
+    position: relative;
+    font-size: 20px;
+    font-family: Sarabun;
+    font-weight: 300;
+    bottom: 220px;
+}
+
+h3{
+    position: relative;
+    font-size: 20px;
+    font-family: Sarabun;
+    font-weight: 300;
+    bottom: 220px;
+}
+
+.contenedorFlor404{
+    outline: 1px solid black;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.flor404{
+    position: relative;
+    opacity: 7%;
+    max-width: 250px;
+    height: auto;
+    bottom: 30px;
+    left: 10px;
+}
+
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 65px;
+        height: 538px;
+    }
+
+    h2{
+        font-size: 20px;
+        bottom: 235px;
+        
+    }
+
+    h3{
+        font-size: 18px;
+        bottom: 235px;
+        width: 220px;
+        margin: auto;
+    }
+
+    .menuError{
+        width: 100%;
+        left: 0;
+    }
+
+    .menuError a{
+        height: 0;
+    }
+
+    .flor404{
+        max-width: 404px;
+        left: 10px;
+        transform: rotate(-7deg);
+    }       
+}
+
+@media screen and (max-width: 375px){
+    h1{
+        font-size: 65px;
+        height: 538px;
+    }
+
+    h2{
+        font-size: 20px;
+        bottom: 235px;
+        
+    }
+
+    h3{
+        font-size: 18px;
+        bottom: 235px;
+        width: 220px;
+        margin: auto;
+    }
+
+    .menuError{
+        width: 100%;
+        left: 0;
+    }
+
+    .menuError a{
+        height: 0;
+    }
+
+    .flor404{
+        max-width: 404px;
+        left: 10px;
+        transform: rotate(-7deg);
+    } 
+}
+
+@media screen and (max-width: 425px){
+    h1{
+        font-size: 65px;
+        height: 538px;
+    }
+
+    h2{
+        font-size: 20px;
+        bottom: 235px;
+        
+    }
+
+    h3{
+        font-size: 18px;
+        bottom: 235px;
+        width: 220px;
+        margin: auto;
+    }
+
+    .menuError{
+        width: 100%;
+        left: 0;
+    }
+
+    .menuError a{
+        height: 0;
+    }
+
+    .flor404{
+        max-width: 404px;
+        left: 30px;
+        transform: rotate(-7deg);
+    } 
+}

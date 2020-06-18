@@ -1,0 +1,216 @@
+* {margin:0; padding:0;}
+body{position: relative;}
+
+.menuPrincipal .informacion{
+   background-color: #77c4ad27;
+}
+
+#dineWithUs{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+}
+#dineWithUs .contenedor{
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:#77c4ad27;
+}
+
+#dineWithUs .contenedor:nth-child(2){
+    background-color: rgb(204, 203, 201);
+}
+
+#dineWithUs .contenedor .introduccion{
+    width: 70%;
+    font-size: 15px;
+    font-family: Sarabun;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    color: rgb(138, 137, 136);
+    animation-duration: 2.5s;
+    animation-name: aparecerInfo;   
+}
+@keyframes aparecerInfo{
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+#dineWithUs .contenedor .btn{
+    text-decoration: none;
+    border: 1.5px solid rgb(49, 49, 49);
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Sarabun;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(85, 85, 85);  
+    padding: 15px;
+    transition: background 0.5s;
+    animation-duration: 2.5s;
+    animation-name: aparecerBotonCena;
+} 
+
+@keyframes aparecerBotonCena{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#dineWithUs .contenedor .btn:hover {background: rgb(49, 49, 49); color: #F8F7F4;}
+
+.contenedorInferior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(238, 238, 238, 0.747);
+    width: auto;
+    height: 100vh;
+}
+
+.contacto{
+    display: flex;
+    position: absolute;
+    font-family: Sarabun;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+    color: rgb(131, 131, 131);
+    margin-left: auto;
+    margin: auto;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.emailTelefono{
+    display: flex;
+    position: relative;
+    font-family: Sarabun;
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    color: rgb(131, 131, 131);
+    top: 30px;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.florInferior{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    max-width: 250px;
+    height: auto;
+    opacity: 1;
+}
+
+/* ------------ DISPOSITIVO MÓVIL ------------ */
+@media screen and (max-width: 320px){
+    .contacto{
+        opacity: 1;
+    }
+    .emailTelefono{
+        opacity: 1;
+    }
+    
+    .contenedorFlor{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .florInferior{
+        bottom: -100%;
+        left: -38%;
+        max-width: 800px;
+    }
+
+    #dineWithUs{
+        display: grid;
+        width: 100%;
+    }
+    
+    .contenedorInferior{
+        display: flex;
+        position: absolute;
+        bottom: -200%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .contacto{
+        opacity: 1;
+    }
+    .emailTelefono{
+        opacity: 1;
+    }
+
+    .contenedorFlor{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .florInferior{
+        bottom: -100%;
+        left: -38%;
+        max-width: 800px;
+    }
+
+
+    #dineWithUs{
+        display: grid;
+        width: 100%;
+    }
+    
+    .contenedorInferior{
+        display: flex;
+        position: absolute;
+        bottom: -200%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .contacto{
+        opacity: 1;
+    }
+    .emailTelefono{
+        opacity: 1;
+    }
+    
+    .contenedorFlor{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .florInferior{
+        bottom: -100%;
+        left: -38%;
+        max-width: 800px;
+    }
+
+    #dineWithUs{
+        display: grid;
+        width: 100%;
+    }
+    
+    .contenedorInferior{
+        display: flex;
+        position: absolute;
+        bottom: -200%;
+        width: 100%;
+    }
+}
+

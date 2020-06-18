@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NASIF | Información</title>
+        <meta name="description" content="Información"/>
+        <meta name="author" content="Información sobre Nasif Restaurante"/>
+        <meta name="keywords" content="información del restaurante nasif, años de actividad"/>
+        <link rel="icon" type="image/png" href="imagenes/nasif-icon.png" />
+        <link href="https://fonts.googleapis.com/css?family=Sarabun:100,200,200i,600,800&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="css/estilos-generales.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos-informacion.css"/>
+    </head>
+    <header>
+            <nav class="menuPrincipal">
+              <ul>
+                  <li><a class="btnNasif" href="index.html">nasif.</a></li>
+                  <li><a href="RESERVAS.html">RESERVAS</a></li>
+                  <li><a href="NUESTRORESTAURANTE.html">NUESTRO RESTAURANTE</a></li>
+                  <li class="informacion"><a href="INFORMACION.html">INFORMACIÓN</a></li>
+                  <li><a href="REGISTRARSE.html">REGISTRARSE</a></li>
+                  <li><a id="Nmenu" href="#"><i class="fa fa-chevron-down"></i></a>
+                      <ul class="subMenu">
+                          <li><a href="index.html">INICIO</a></li>
+                          <li><a href="error404.html">VER MI PERFIL</a></li>
+                          <li><a href="error404.html">CONFIGURACIÓN</a></li>
+                          <li><a href="#">CERRAR SESIÓN</a></li>
+                      </ul>
+                  </li>
+              </ul>
+            </nav>
+    </header>
+    
+    <body>
+        <nav class="menuResponsive">
+            <button class="nav-boton" onclick="accion()"><i class="fa fa-angle-up"></i></button>
+            <a href="index.html" class="nav-enlace desaparece btnNasif">nasif.</a>
+            <a href="RESERVAS.html" class="nav-enlace desaparece">RESERVAS</a>
+            <a href="NUESTRORESTAURANTE.html" class="nav-enlace desaparece">NUESTRO RESTAURANTE</a>
+            <a href="INFORMACION.html" class="nav-enlace desaparece">INFORMACIÓN</a>
+            <a href="REGISTRARSE.html" class="nav-enlace desaparece">REGISTRARSE</a>
+            <a href="error404.html" class="nav-enlace desaparece">INICIAR SESIÓN</a>
+        </nav>
+
+        <section id="dineWithUs">
+            <div class="contenedor contenedorUno">
+                <p class="introduccion">Escondido en la calle Pelayo de Barcelona, el restaurante Nasif sirve un menú dirigido por un chef Argentino con platos modernos, clásicos, deliciosos cócteles y una refinada lista de vinos y cervezas. Con su ambiente elegante pero accesible, Nasif es el destino perfecto para una cena previa al teatro, una cena familiar o una copa romántica. 
+                </p>
+            </div>
+            <div class="contenedor contenedorDos">
+                <a class="btn" href="RESERVAS.html">CENA CON NOSOTROS</a>
+            </div>
+        </section>
+        
+        <div class="contenedorInferior">
+            <h2 class="contacto aparecer">Contacto</h2>
+            <p class="emailTelefono aparecer">info@nasif.com<br>819 640-2511</p>
+            <div class="contenedorFlor">
+                <img class="florInferior" src="imagenes/florDos.png" alt="Dibujo de una flor">
+            </div> 
+        </div>
+        
+                <!-- JAVASCRIP -->
+        <script src="js/main.js"></script>
+    </body>
+
+    <footer class="contenedorFooter"> 
+        <div>    
+            <h2 class="footerText">Nasif 2020 | Copyright © Todos los derechos reservados</h2>
+        </div>
+        <ul class="redesSociales">
+            <li><a class="facebook" target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="instagram" target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="twitter" target="_blank" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+</html>

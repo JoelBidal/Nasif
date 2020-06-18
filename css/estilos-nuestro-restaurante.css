@@ -1,0 +1,282 @@
+body{position: relative;}
+
+#menuPrincipal .nuestroRestaurante{
+    background-color: #77c4ad27;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+}
+
+#contenedor .contenedorRest {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:#77c4ad27;
+    animation-duration: 2s;
+    animation-name: aparecerBotonCarousel;
+} 
+
+@keyframes aparecerBotonCarousel{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#contenedor .contenedorRest:nth-child(2){
+    background-color: rgb(204, 203, 201);
+}
+
+.contenedorRest .btn{
+    text-decoration: none;
+    border: 1.5px solid rgb(49, 49, 49);
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Sarabun';
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(85, 85, 85);  
+    padding: 15px;
+    transition: background 0.5s;
+    animation-duration: 2s;
+    animation-name: aparecerBotonVisita;
+} 
+
+@keyframes aparecerBotonVisita{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#contenedor .contenedorRest .btn:hover {background: rgb(49, 49, 49); color: #F8F7F4;}
+
+.contenedorInferior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(238, 238, 238, 0.747);
+    width: 100%;
+    height: 100vh;
+}
+
+.contenido{
+    display: block;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.interiorismo{
+    font-family: Sarabun;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: rgb(175, 175, 174);
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.parrafoCarla{
+    font-family: Sarabun;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: rgb(175, 175, 174);
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.parrafoExplicacion{
+    font-family: Sarabun;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.2;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: rgba(122, 122, 121, 0.658);
+    width: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    opacity: 0;
+    transition: all 3.5s;
+}
+
+.florInferior{
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    max-width: 240px;
+    height: auto;
+    opacity: 1;
+    animation-duration: 5s;
+    animation-name: aparecerFlor;
+} 
+
+@keyframes aparecerFlor{
+    0% {left: -500px;}
+    100% {left: 1;}
+}
+
+
+/* ------------ DISPOSITIVO MÓVIL ------------ */
+
+@media screen and (max-width: 320px){
+    .florInferior{
+        display: none;
+    }
+
+    #contenedor .contenedorRest {
+        z-index: 800;
+    }
+
+    #contenedor{
+        display: grid;
+        z-index: 100;
+        width: 100%;
+    }
+
+    .veniAVisitarnos{
+        position: relative;
+    }
+    
+    .contenido{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        bottom: -100%;
+    }
+
+    .contenedorInferior{
+        display: block;
+        width: 100%;
+        top: 40%;
+    }
+
+    .interiorismo{
+        opacity: 1;
+        padding-top: 25%;
+    }
+    
+    .parrafoCarla{
+        width: 95%;
+        font-weight: 200;
+        font-size: 12px;
+        margin-bottom: 10%;
+        opacity: 1;
+    }
+    .parrafoExplicacion{
+        margin: 5%;
+        font-size: 12px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .florInferior{
+        display: none;
+    }
+
+    #contenedor{
+        display: grid;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .veniAVisitarnos{
+        position: relative;
+    }
+    
+    .contenido{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        bottom: -100%;
+    }
+
+    .contenedorInferior{
+        display: block;
+        width: 100%;
+        top: 40%;
+    }
+
+    .interiorismo{
+        padding-top: 18%;
+        opacity: 1;
+    }
+    
+    .parrafoCarla{
+        width: 95%;
+        font-weight: 200;
+        font-size: 12px;
+        margin-bottom: 10%;
+        opacity: 1;
+    }
+    .parrafoExplicacion{
+        margin: 5%;
+        font-size: 12px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .nav-boton{
+        position: fixed;
+        bottom: 0;
+    }
+
+    .florInferior{
+        display: none;
+    }
+
+    #contenedor{
+        display: grid;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .veniAVisitarnos{
+        position: relative;
+    }
+    
+    .contenido{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        bottom: -100%;
+    }
+
+    .contenedorInferior{
+        display: block;
+        width: 100%;
+        top: 40%;
+    }
+
+    .interiorismo{
+        padding-top: 15%;
+        opacity: 1;
+    }
+    
+    .parrafoCarla{
+        width: 95%;
+        font-weight: 200;
+        font-size: 12px;
+        margin-bottom: 10%;
+        opacity: 1;
+    }
+    .parrafoExplicacion{
+        margin: 5%;
+        font-size: 12px;
+        opacity: 1;
+    }
+}
